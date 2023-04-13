@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Viewer</title>
-    <link rel="stylesheet" href="Index.css">
+    <title>Cars go Vroom Vroom</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header>
@@ -13,78 +13,58 @@
     </header>
 
     <main>
+
+
+        <div class="container">
+            <div class="child">
+
+                    <form>
+
+                        <input 
+                            type='text'
+                            id="name"
+                            placeholder=" Car Name"/>
+                        <input 
+                            type='text'
+                            id="worth"
+                            placeholder=' Car Worth'/>
+                        <input 
+                            type="text"
+                            id="speed"
+                            placeholder=" Top Speed">
+                        <input 
+                            type="text"
+                            id="hp"
+                            placeholder=" Horse Power">
+                        <input 
+                            type="text"
+                            id="brand"
+                            placeholder=" Brand">
+                        <input 
+                            type="text"
+                            id="transmission"
+                            placeholder=" Transmission Type">
+                        <input 
+                            type="text"
+                            id="driveTrain"
+                            placeholder=" Drive Train">
+                        <input 
+                            type='text'
+                            id="img"
+                            placeholder=' Paste an image URL'/>
+
+                        <button>Add Car</button>
+
+                    </form>
+
+                <section id="cars-container"></section>
+
+            </div>
+        </div>
         
-     <!-- <style> 
-        #div1 {
-            background-color:purple;
-            width: 10vw;
-            float: right;
-            height: 900px
-        }
-        #div2 {
-            background-color:rgb(73, 73, 73);
-            width: 80vw;
-            float: left;
-            height: 900px
-        }
-        #div3 {
-            background-color:purple;
-            width: 10vw;
-            margin: auto;
-            height: 900px
-        }
-
-    </style>
-<div id="div1"></div>
-<div id="div2"></div>
-<div id="div3"></div> -->
-
-    <form>
-
-        <input 
-            type='text'
-            id="name"
-            placeholder=" Car Name"/>
-        <input 
-            type='text'
-            id="worth"
-            placeholder=' Car Worth'/>
-        <input 
-            type="text"
-            id="speed"
-            placeholder=" Top Speed">
-        <input 
-            type="text"
-            id="hp"
-            placeholder=" Horse Power">
-        <input 
-            type="text"
-            id="brand"
-            placeholder=" Brand">
-        <input 
-            type="text"
-            id="trasmission"
-            placeholder=" Transmission Type">
-        <input 
-            type="text"
-            id="drive train"
-            placeholder=" Drive Train">
-        <input 
-            type='text'
-            id="img"
-            placeholder=' Paste an image URL'/>
-        <button>add car</button>
-    </form>
-
-    <section id="cars-container"></section>
-
     </main>
 
-    <footer>
-        
-    </footer>
-
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="Index.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

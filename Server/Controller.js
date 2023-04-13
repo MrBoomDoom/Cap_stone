@@ -1,5 +1,5 @@
-const cars = require('./Db.json')
-let globalId = 4
+const cars = require('./db.json')
+let globalId = 2
 
 module.exports = {
     getCars: (req, res) => {
@@ -17,7 +17,7 @@ module.exports = {
         let newCar = {
             id: globalId,
             carName, 
-            worth: +worth,
+            worth,
             topSpeed,
             horsePower,
             brand,
@@ -26,7 +26,7 @@ module.exports = {
             imageURL
         }
         cars.push(newCar)
-        res.status(200).send(cars)
         globalId++
+        res.status(200).send(cars)
     }
 }

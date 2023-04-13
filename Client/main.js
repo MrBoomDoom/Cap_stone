@@ -33,15 +33,13 @@ const deleteCar = (id) => {
         })
 }
 
-carName, worth, topSpeed, horsePower, brand, transmission, driveTrain, imageURL
-
 const submitHandler = (e) => {
     e.preventDefault()
 
-    let carName = document.querySelector('#carName')
+    let carName = document.querySelector('#name')
     let worth = document.querySelector('#worth')
-    let topSpeed = document.querySelector('#topSpeed')
-    let horsePower = document.querySelector('#horsePower')
+    let topSpeed = document.querySelector('#speed')
+    let horsePower = document.querySelector('#hp')
     let brand = document.querySelector('#brand')
     let transmission = document.querySelector('#transmission')
     let driveTrain = document.querySelector('#driveTrain')
@@ -71,33 +69,33 @@ const submitHandler = (e) => {
 }
 
 const createCarCard = (car) => {
-    // locate section on HTML where we will be putting our movie card
-    const carContainer = document.querySelector('#cars-container')
 
-    // Create a new HTML div element
+    const carsContainer = document.querySelector('#cars-container')
+
     const carCard = document.createElement('div')
 
-    // Add the house-card class to the houseCard div we just created. This is mainly just for styling.
     carCard.classList.add('car-card')
 
-    // Define which additional HTML elements need to exist inside our housesCard div
     carCard.innerHTML = `
-    <img alt='car cover image' src=${car.imageURL} class="car-cover-image"/>
-    <p class="address">${car.address}</p>
-    <div class="btns-container">
-        <p class="cars-price">$${car.price}</p>
-    </div>
+    <img alt='car image' src=${car.imageURL} class="car-cover-image"/>
+    <p class="cars-carName">${car.carName}</p>
+    <p class="cars-worth">$${car.worth}</p>
+    <p class="cars-topSpeed">Top Speed- ${car.topSpeed} mph</p>
+    <p class="cars-horsePower">HP- ${car.horsePower} </p>
+    <p class="cars-brand">${car.brand}</p>
+    <p class="cars-transmission">${car.transmission}</p>
+    <p class="cars-driveTrain">${car.driveTrain}</p>
+    
     <button onclick="deleteCar(${car.id})">delete</button>
     `
 
-    // Attach the houseCard div (with all of it's nested elements) to the housesContainer on our HTML
-    carContainer.appendChild(carCard)
+    carsContainer.appendChild(carCard)
 }
 
 const displayCars = (arr) => {
-    const carContainer = document.querySelector('#cars-container')
+    const carsContainer = document.querySelector('#cars-container')
 
-    carContainer.innerHTML = ``
+    carsContainer.innerHTML = ``
     for (let i = 0; i < arr.length; i++) {
         createCarCard(arr[i])
     }

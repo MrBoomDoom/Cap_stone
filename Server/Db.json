@@ -1,3 +1,35 @@
 [
-    
+    {
+        "id": 1,
+        "carName": "98 Skyline gtr R34",
+        "worth": "10,000 to $240,000",
+        "topSpeed": 165,
+        "horsePower": 280,
+        "brand": "Nissan",
+        "transmission": "6 Speed Manual",
+        "driveTrain": "AWD",
+        "imageURL": "https://www.montumotors.com/media/DSC_0992.jpg"
+    },
+    {
+        "id": 2,
+        "carName": "91 Acura NSX",
+        "worth": "92,000",
+        "topSpeed": 163,
+        "horsePower": 270,
+        "brand": "Acura",
+        "transmission": "5 Speed Manual/Automatic",
+        "driveTrain": "RWD",
+        "imageURL": "https://uploads.builtforbackroads.com/uploads/2022/09/2022.09.17-ACURA-NSX-1991_1.jpg"
+    },
+    {
+        "id": 3,
+        "carName": "Evo X",
+        "worth": "30,000",
+        "topSpeed": 155,
+        "horsePower": 276,
+        "brand": "Mitsubishi",
+        "transmission": "5 Speed Manual/Automatic",
+        "driveTrain": "AWD",
+        "imageURL": "https://i.pinimg.com/originals/96/69/7e/96697ef35d09ed8c9855e82bd77e460b.jpg"
+    }
 ]
