@@ -77,15 +77,18 @@ const createCarCard = (car) => {
     carCard.classList.add('car-card')
 
     carCard.innerHTML = `
-    <img alt='car image' src=${car.imageURL} class="car-cover-image"/>
+
     <p class="cars-carName">${car.carName}</p>
+    <img alt='car image' src=${car.imageURL} class="car-cover-image"/>
+
     <p class="cars-worth">$${car.worth}</p>
     <p class="cars-topSpeed">Top Speed- ${car.topSpeed} mph</p>
     <p class="cars-horsePower">HP- ${car.horsePower} </p>
+
     <p class="cars-brand">${car.brand}</p>
     <p class="cars-transmission">${car.transmission}</p>
     <p class="cars-driveTrain">${car.driveTrain}</p>
-    
+
     <button onclick="deleteCar(${car.id})">delete</button>
     `
 

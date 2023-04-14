@@ -1,5 +1,5 @@
 const cars = require('./db.json')
-let globalId = 2
+let globalId = 4
 
 module.exports = {
     getCars: (req, res) => {
