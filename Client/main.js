@@ -78,16 +78,16 @@ const createCarCard = (car) => {
 
     carCard.innerHTML = `
 
-    <p class="cars-carName">${car.carName}</p>
+    <h4 class="cars-carName">${car.carName}</h4>
     <img alt='car image' src=${car.imageURL} class="car-cover-image"/>
 
-    <p class="cars-worth">$${car.worth}</p>
+    <h6 class="cars-worth">$${car.worth}</h6>
     <p class="cars-topSpeed">Top Speed- ${car.topSpeed} mph</p>
-    <p class="cars-horsePower">HP- ${car.horsePower} </p>
-
-    <p class="cars-brand">${car.brand}</p>
     <p class="cars-transmission">${car.transmission}</p>
-    <p class="cars-driveTrain">${car.driveTrain}</p>
+    
+    <p class="cars-brand">${car.brand}</p>
+    <p class="cars-horsePower">HP- ${car.horsePower} </p>
+    <h6 class="cars-driveTrain">${car.driveTrain}</h6>
 
     <button onclick="deleteCar(${car.id})">delete</button>
     `
