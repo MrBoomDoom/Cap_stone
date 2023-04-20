@@ -23,13 +23,13 @@
     },
     {
         "id": 3,
-        "carName": "Evo X",
-        "worth": "30,000",
-        "topSpeed": 155,
-        "horsePower": 276,
-        "brand": "Mitsubishi",
+        "carName": "93 RX-7",
+        "worth": "25,600",
+        "topSpeed": 158,
+        "horsePower": 255,
+        "brand": "Mazda",
         "transmission": "5 Speed Manual/Automatic",
-        "driveTrain": "AWD",
-        "imageURL": "https://i.pinimg.com/originals/96/69/7e/96697ef35d09ed8c9855e82bd77e460b.jpg"
+        "driveTrain": "RWD",
+        "imageURL": "https://i.redd.it/oh51e0hpnuw01.jpg"
     }
 ]
