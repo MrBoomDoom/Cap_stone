@@ -81,7 +81,7 @@ const createCarCard = (car) => {
     <h4 class="cars-carName">${car.carName}</h4>
     <img alt='car image' src=${car.imageURL} class="car-cover-image"/>
 
-    <h6 class="cars-worth">$${car.worth}</h6>
+    <h6 class="cars-worth">$${car.worth} Average</h6>
     <p class="cars-topSpeed">Top Speed- ${car.topSpeed} mph</p>
     <p class="cars-transmission">${car.transmission}</p>
     
